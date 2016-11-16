@@ -69,6 +69,18 @@ class DraggableImageView: UIView {
             // Ignore the x translation because we only want the tray to move up and down hence translation.y
             imageView.center = CGPoint(x: imageOriginalCenter.x + translation.x, y: imageOriginalCenter.y)
             
+            if (translation.x < 0) {
+                print("onPhotoPanGesture.Left")
+                print("translation.x.radiansToDegrees = \(translation.x.radiansToDegrees)")
+                
+                imageView.transform = CGAffineTransform(rotationAngle: translation.x.degreesToRadians)
+            } else {
+                print("onPhotoPanGesture.Right")
+                print("translation.x.radiansToDegrees = \(translation.x.radiansToDegrees)")
+                
+                imageView.transform = CGAffineTransform(rotationAngle: translation.x.degreesToRadians)
+            }
+            
         } else if sender.state == .ended {
             print("onPhotoPanGesture.Gesture ended")
         }
