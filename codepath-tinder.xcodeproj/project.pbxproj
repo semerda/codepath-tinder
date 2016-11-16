@@ -15,6 +15,8 @@
 		1784F9771DD9925E0021EAA8 /* codepath_tinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784F9761DD9925E0021EAA8 /* codepath_tinderTests.swift */; };
 		1784F9821DD9925E0021EAA8 /* codepath_tinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784F9811DD9925E0021EAA8 /* codepath_tinderUITests.swift */; };
 		179093341DDA9B4300FA62BE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179093331DDA9B4300FA62BE /* Helpers.swift */; };
+		845D68131DDBE47400796D09 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D68121DDBE47400796D09 /* DraggableImageView.swift */; };
+		845D68151DDBE51B00796D09 /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D68141DDBE51B00796D09 /* DraggableImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1784F9811DD9925E0021EAA8 /* codepath_tinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_tinderUITests.swift; sourceTree = "<group>"; };
 		1784F9831DD9925E0021EAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179093331DDA9B4300FA62BE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		845D68121DDBE47400796D09 /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		845D68141DDBE51B00796D09 /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				1784F9611DD9925E0021EAA8 /* AppDelegate.swift */,
-				1784F9631DD9925E0021EAA8 /* CardsViewController.swift */,
-				1784F9651DD9925E0021EAA8 /* Main.storyboard */,
 				1784F9681DD9925E0021EAA8 /* Assets.xcassets */,
-				1784F96A1DD9925E0021EAA8 /* LaunchScreen.storyboard */,
-				1784F96D1DD9925E0021EAA8 /* Info.plist */,
+				1784F9631DD9925E0021EAA8 /* CardsViewController.swift */,
+				845D68121DDBE47400796D09 /* DraggableImageView.swift */,
 				179093331DDA9B4300FA62BE /* Helpers.swift */,
+				1784F96D1DD9925E0021EAA8 /* Info.plist */,
+				1784F96A1DD9925E0021EAA8 /* LaunchScreen.storyboard */,
+				1784F9651DD9925E0021EAA8 /* Main.storyboard */,
+				845D68141DDBE51B00796D09 /* DraggableImageView.xib */,
 			);
 			path = "codepath-tinder";
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			files = (
 				1784F96C1DD9925E0021EAA8 /* LaunchScreen.storyboard in Resources */,
 				1784F9691DD9925E0021EAA8 /* Assets.xcassets in Resources */,
+				845D68151DDBE51B00796D09 /* DraggableImageView.xib in Resources */,
 				1784F9671DD9925E0021EAA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +274,7 @@
 			files = (
 				1784F9641DD9925E0021EAA8 /* CardsViewController.swift in Sources */,
 				179093341DDA9B4300FA62BE /* Helpers.swift in Sources */,
+				845D68131DDBE47400796D09 /* DraggableImageView.swift in Sources */,
 				1784F9621DD9925E0021EAA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
