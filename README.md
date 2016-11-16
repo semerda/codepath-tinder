@@ -8,14 +8,6 @@ Building the basics of the Tinder app.
 - [x] Final Resting Place for the Photo
 - [x] Build the Details Screen
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='tinder-anim-v1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
 ## License
 
 Visit [www.ernestsemerda.com](http://www.ernestsemerda.com/)
