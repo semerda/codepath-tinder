@@ -17,6 +17,7 @@
 		179093341DDA9B4300FA62BE /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179093331DDA9B4300FA62BE /* Helpers.swift */; };
 		845D68131DDBE47400796D09 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D68121DDBE47400796D09 /* DraggableImageView.swift */; };
 		845D68151DDBE51B00796D09 /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D68141DDBE51B00796D09 /* DraggableImageView.xib */; };
+		845D68171DDBF4C100796D09 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D68161DDBF4C100796D09 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		179093331DDA9B4300FA62BE /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		845D68121DDBE47400796D09 /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 		845D68141DDBE51B00796D09 /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
+		845D68161DDBF4C100796D09 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				1784F96A1DD9925E0021EAA8 /* LaunchScreen.storyboard */,
 				1784F9651DD9925E0021EAA8 /* Main.storyboard */,
 				845D68141DDBE51B00796D09 /* DraggableImageView.xib */,
+				845D68161DDBF4C100796D09 /* ProfileViewController.swift */,
 			);
 			path = "codepath-tinder";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				1784F9641DD9925E0021EAA8 /* CardsViewController.swift in Sources */,
 				179093341DDA9B4300FA62BE /* Helpers.swift in Sources */,
+				845D68171DDBF4C100796D09 /* ProfileViewController.swift in Sources */,
 				845D68131DDBE47400796D09 /* DraggableImageView.swift in Sources */,
 				1784F9621DD9925E0021EAA8 /* AppDelegate.swift in Sources */,
 			);

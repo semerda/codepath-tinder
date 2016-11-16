@@ -29,12 +29,17 @@
                                 <rect key="frame" x="8" y="132" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Y7W-oy-Aju" appends="YES" id="BBS-3S-fzl"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="photoImageView" destination="Voj-0C-w36" id="cLQ-gM-7vO"/>
+                        <segue destination="Z1W-WQ-pmk" kind="modal" identifier="ProfileViewSegue" id="l6o-lp-FJy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -43,13 +48,56 @@
                         <action selector="onPhotoPanGesture:" destination="BYZ-38-t0r" id="lm0-T1-HrX"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="Y7W-oy-Aju">
+                    <connections>
+                        <action selector="goToProfileView" destination="BYZ-38-t0r" id="AWd-YH-CvV"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="73" y="137"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="kIP-8C-abi">
+            <objects>
+                <viewController id="Z1W-WQ-pmk" customClass="ProfileViewController" customModule="codepath_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z3b-yN-Olc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav_bar2" id="oya-Fz-do3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h7H-2l-tCN" appends="YES" id="lrE-OH-0tJ"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="824-0M-uwC">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="824-0M-uwC" id="Xg2-Pl-3ky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eV0-Cx-ypS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h7H-2l-tCN">
+                    <connections>
+                        <action selector="onNavTapGesture:" destination="Z1W-WQ-pmk" id="CXT-9Y-uLi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="524" y="137"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

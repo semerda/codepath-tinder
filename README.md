@@ -6,8 +6,7 @@ Building the basics of the Tinder app.
 - [x] Custom View for the Draggable Image
 - [x] Rotate the Photo during the Pan
 - [x] Final Resting Place for the Photo
-- [ ] Build the Details Screen
-- [ ] Custom Modal Transition
+- [x] Build the Details Screen
 
 ## Video Walkthrough
 

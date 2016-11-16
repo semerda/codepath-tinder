@@ -23,7 +23,20 @@ class CardsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func goToProfileView() {
+        self.performSegue(withIdentifier: "ProfileViewSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProfileViewSegue" {
+            // Get a reference to the detail view controller
+            let destinationViewController = segue.destination as! ProfileViewController
+            
+            // Pass the flat canvas to export
+            destinationViewController.photoImage = photoImageView.image
+        }
+    }
     
 }
 
