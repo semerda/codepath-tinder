@@ -70,19 +70,23 @@ class DraggableImageView: UIView {
             imageView.center = CGPoint(x: imageOriginalCenter.x + translation.x, y: imageOriginalCenter.y)
             
             if (translation.x < 0) {
-                print("onPhotoPanGesture.Left")
-                print("translation.x.radiansToDegrees = \(translation.x.radiansToDegrees)")
-                
                 imageView.transform = CGAffineTransform(rotationAngle: translation.x.degreesToRadians)
             } else {
-                print("onPhotoPanGesture.Right")
-                print("translation.x.radiansToDegrees = \(translation.x.radiansToDegrees)")
-                
                 imageView.transform = CGAffineTransform(rotationAngle: translation.x.degreesToRadians)
+            }
+            
+            // Animate the photo off the screen to the left or right
+            if translation.x < -50 || translation.x > 50 {
+                imageView.removeFromSuperview()
             }
             
         } else if sender.state == .ended {
             print("onPhotoPanGesture.Gesture ended")
+            
+            // Otherwise, restore the original center and transform.
+            if translation.x > -50 || translation.x < 50 {
+                imageView.transform = CGAffineTransform.identity
+            }
         }
     }
 }
